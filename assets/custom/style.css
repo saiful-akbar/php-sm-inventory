@@ -1,0 +1,426 @@
+html, body {
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 20px 10px 80px 280px;
+    flex: 1 0 auto;
+}
+
+nav .nav-wrapper .brand-logo {
+    margin-left: 290px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width : 992px) {
+
+    main {
+        max-width: 100%;
+        padding: 20px 5px 80px 5px;
+    }
+
+    nav .nav-wrapper .brand-logo {
+        margin-left: 55px;
+    }
+}
+
+.side-nav .user-view img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: -15px;
+    margin-right: 5px;
+}
+
+.side-nav .user-view .logo {
+    font-family: 'times new roman';
+    font-weight: bold;
+    font-size: 23px;
+    color: #000;
+}
+
+.side-nav .user-view .logo span {
+    color: #00796B;
+}
+
+
+
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #222;
+}
+
+.preloader #loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.preloader .title {
+    font-size: 14px;
+}
+/* Akhir Preloader */
+
+
+
+
+/* Login */
+.login-body {
+    display: table;
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.login-body .login-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login-title h4{
+    font-variant: small-caps;
+}
+
+/* Akhir Login */
+
+
+
+
+/* custom css */
+i.pink-item {
+    color: #f4425c !important;
+}
+
+form.sidebar-form {
+    margin: 5px;
+}
+
+div.page-announce {
+    min-height: 175px;
+    height: auto;
+    background-color: #f4425c;
+    padding: 40px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+h1.page-announce-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 56px;
+    color: #fff;
+    line-height: 0.5em;
+    margin-left: 50px;
+}
+
+.material-tooltip {
+    display: hidden;
+}
+
+.bg-aqua {
+    background-color: #00c0ef !important;
+}
+
+.bg-green {
+    background-color: #00a65a !important;
+}
+
+.bg-yellow {
+    background-color: #f39c12 !important;
+}
+
+.bg-red {
+    background-color: #dd4b39 !important;
+}
+
+.small-box {
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.small-box>.inner {
+    padding: 10px;
+}
+
+.small-box h3 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+    color: #fff;
+}
+
+.small-box p {
+    color: #fff;
+}
+
+.small-box .icon {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    z-index: 0;
+    font-size: 90px;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.small-box .icon i {
+    font-size: 90px;
+}
+
+.small-box>.small-box-footer {
+    position: relative;
+    text-align: center;
+    padding: 3px 0;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.page-footer {
+    padding-top: 0 !important;
+    background-color: #f4425c;
+    margin-top: 20px;
+}
+
+.footer-copyright {
+    background-color: inherit !important;
+}
+
+.autocomplete-suggestions {
+    border: 1px solid #999;
+    width: 210px !important;
+    background: #fff;
+    max-height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+    width: 290px !important;
+    top: 161px;
+    left: 11px;
+    max-height: 300px;
+    z-index: 20;
+}
+
+.autocomplete-suggestion {
+    padding: 10px 5px;
+    width: 300px !important;
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+
+.keygroup {
+    margin-left: 5px;
+}
+
+.getusr {
+    width: 500px;
+}
+
+.text-thin {
+    font-weight: 100 !important;
+}
+
+a.button-collapse {
+    color: #fff;
+}
+
+div.quick-links a {
+    width: 100%;
+    margin: 5px;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+}
+
+.alert {
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f;
+}
+
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faf2cc;
+    color: #8a6d3b;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+}
+
+#chatInfo p {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+}
+
+.custom-responsive {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+@media (max-width: 320px) {
+    .page-announce {
+        min-height: 40px;
+        height: auto;
+    }
+
+    .page-announce-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-announce {
+        min-height: 50px;
+        height: auto;
+    }
+
+    .page-announce-text {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .getusr {
+        margin-left: 0;
+        width: 300px;
+    }
+
+    .page-announce-text {
+        font-size: 36px;
+    }
+
+    .page-announce {
+        padding: 20px;
+    }
+}
+
+@media (max-width:992px) {
+    div.page-announce {
+        min-height: 60px;
+        height: auto;
+        padding: 10px;
+    }
+
+    h1.page-announce-text {
+        font-size: 32px;
+    }
+}
+/* akhir custom css */
+
+
+
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 18px;
+    color: #575757;
+    text-transform: capitalize;
+}
+
+input[type=date] {
+    cursor: pointer;
+}
+
+table {
+    min-width: 100%;
+}
+
+.ubah-data i{
+    font-size: 18px;
+}
+
+.input-icon {
+    position: absolute;
+    bottom: 25px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #1F1F1F;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.input-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.toast-close {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.toast-close:hover {
+    background-color: #616161;
+}
+
+.toast-icon {
+    font-size: 23px;
+}
+
+.send-value {
+    cursor: pointer;
+}
+
+.table-header .actions a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.side-nav {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.side-nav:hover {
+    overflow-y: auto;
+}
