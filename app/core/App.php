@@ -26,6 +26,7 @@ class App
 
 	public function parseURL()
 	{
+		$url=['/'];
 		if (isset($_GET['url'])) {
 
 			// mengilangkan tanda "/" pada akhir url
@@ -36,9 +37,8 @@ class App
 
 			// membersihkan url dari tanda /
 			$url = explode('/', $url);
-
-			return $url;
 		}
+		return $url;
 	}
 
 
