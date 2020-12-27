@@ -10,8 +10,14 @@ class App
 	
 	public function __construct()
 	{
+                // Menjalankan fungsi parseURL()
 		$url = $this->parseURL();
 		
+                /**
+                 * Cek apakah ada session atau tidak
+                 * Jika ada, cek apakah session-nya admin atau gudang
+                 * Jika tidak ada arahkan ke halaman login
+                 /*
 		if ( isset($_SESSION['admin']) ) {
 			$this->routing('admin', $url, 'User');
 		}
@@ -44,21 +50,20 @@ class App
 
 	public function routing($folder, $url = [], $controller = [])
 	{
-		// cek jika ada controller atau tidak
+		// cek apakah controller ada atau tidak
 		if ( file_exists('app/controllers/'.$folder.'/'.$url[0].'.php') ) {
 			$this->controller = $url[0];
 			unset($url[0]);
-		}
-		else {
+		} else {
 			$this->controller = $controller;
-
 		}
+
+                // Panggil dan jalankan controller
 		require_once 'app/controllers/'.$folder.'/'.$this->controller.'.php';
 		$this->controller = new $this->controller;
 
 		// cek jika ada method atau tidak
 		if ( isset($url[1]) ) {
-		
 			if ( method_exists($this->controller, $url[1]) ) {
 				$this->method = $url[1];
 				unset($url[1]);
