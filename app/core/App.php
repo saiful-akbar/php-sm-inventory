@@ -20,11 +20,9 @@ class App
                  */
 		if ( isset($_SESSION['admin']) ) {
 			$this->routing('admin', $url, 'User');
-		}
-		else if ( isset($_SESSION['gudang']) ) {
+		} else if ( isset($_SESSION['gudang']) ) {
 			$this->routing('gudang', $url, 'Beranda');
-		}
-		else {
+		} else {
 			$this->routing('auth', $url, 'login');
 		}
 	}
