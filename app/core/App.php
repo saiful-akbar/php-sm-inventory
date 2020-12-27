@@ -17,7 +17,7 @@ class App
                  * Cek apakah ada session atau tidak
                  * Jika ada, cek apakah session-nya admin atau gudang
                  * Jika tidak ada arahkan ke halaman login
-                 /*
+                 */
 		if ( isset($_SESSION['admin']) ) {
 			$this->routing('admin', $url, 'User');
 		}
